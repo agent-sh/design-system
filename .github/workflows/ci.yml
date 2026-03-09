@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  agnix:
+    uses: agent-sh/.github/.github/workflows/ci-agnix.yml@main
